@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imperion - Game Downloads</title>
+  <style>
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(15,15,15,0.95);
+      border-bottom: 1px solid #222;
+    }
+    nav .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #00fff7;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00fff7;
+    }
+  </style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0b0b0b;
+            color: #dcdcdc;
+            font-family: "Orbitron", sans-serif;
+        }
+
+        header {
+            padding: 40px 0;
+            text-align: center;
+            background: url('/views/gambar/predator_banner.jpg') center/cover no-repeat;
+            border-bottom: 2px solid #8b0000;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #ff3333;
+            text-shadow: 0 0 12px #8b0000;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 50px auto;
+            padding: 10px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .game-card {
+            background: rgba(20, 20, 20, 0.7);
+            border: 1px solid #222;
+            border-radius: 14px;
+            overflow: hidden;
+            backdrop-filter: blur(4px);
+            transition: 0.25s ease;
+            position: relative;
+        }
+
+        .game-card:hover {
+            transform: scale(1.03);
+            border-color: #a00000;
+            box-shadow: 0 0 18px #520000;
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #300;
+        }
+
+        .info {
+            padding: 15px;
+        }
+
+        .info h3 {
+            margin: 0;
+            font-size: 22px;
+            color: #ff3b3b;
+            text-shadow: 0 0 6px #7a0000;
+        }
+
+        .info p {
+            font-size: 14px;
+            margin: 8px 0 12px;
+            color: #bdbdbd;
+        }
+
+        .rune {
+            font-size: 16px;
+            color: #ff2323;
+            margin-right: 6px;
+        }
+
+        .btn-download {
+            display: inline-block;
+            padding: 9px 15px;
+            background: #a10000;
+            color: white;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            box-shadow: 0 0 8px #600000;
+            transition: 0.25s ease;
+        }
+
+        .btn-download:hover {
+            background: #ff3b3b;
+            box-shadow: 0 0 12px #ff0000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+            color: #666;
+        }
+    </style>
+
+</head>
+<body>
+<nav>
+    <div class="logo">Imperion</div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/Games">Games</a></li>
+      <li><a href="/top-download">Top Downloads</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/kontak">Contact</a></li>
+    </ul>
+  </nav>
+<header>
+    <h1>ALL GAMES</h1>
+</header>
+
+<div class="container">
+    <div class="grid">
+
+        <!-- GAME 1 -->
+        <div class="game-card">
+            <img src="/gambar/imperion shadow war.jpeg" alt="Game 1">
+            <div class="info">
+                <h3>Imperion: Shadow War</h3>
+                <p><span class="rune">⟁</span>FPS futuristik + stealth ala Yautja.</p>
+                <a href="/downloads/imperion-shadow-war.apk" class="btn-download">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- GAME 2 -->
+        <div class="game-card">
+            <img src="/gambar/arena tribe.png" alt="Game 2">
+            <div class="info">
+                <h3>Arena of Tribes</h3>
+                <p><span class="rune">𖤐</span>MOBA survival dengan mekanik brutal.</p>
+                <a href="/downloads/imperion-arena.apk" class="btn-download">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- GAME 3 -->
+        <div class="game-card">
+            <img src="/gambar/tactical assault.jpg" alt="Game 3">
+            <div class="info">
+                <h3>Tactical Assault</h3>
+                <p><span class="rune">⫷⫸</span>Strategi perang antar klan Imperion.</p>
+                <a href="/downloads/imperion-tactical.apk" class="btn-download">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- GAME 4 -->
+        <div class="game-card">
+            <img src="gambar/hunter trial.jpg" alt="Game 4">
+            <div class="info">
+                <h3>Hunter Trial</h3>
+                <p><span class="rune">𖤓</span>Training mode: uji skill ala Yautja Warrior.</p>
+                <a href="/downloads/hunter-trial.apk" class="btn-download">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- GAME 5 -->
+        <div class="game-card">
+            <img src="gambar/blood line.jpeg" alt="Game 5">
+            <div class="info">
+                <h3>DLC: Bloodlines Pack</h3>
+                <p><span class="rune">✦</span>Skin, senjata, efek darah neon merah.</p>
+                <a href="/downloads/bloodlines-pack.zip" class="btn-download">DOWNLOAD</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2025 Imperion Game Universe • All Rights Reserved
+</footer>
+
+</body>
+</html>

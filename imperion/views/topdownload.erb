@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperion – Top Downloads</title>
+    <style>
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(15,15,15,0.95);
+      border-bottom: 1px solid #222;
+    }
+    nav .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #00fff7;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00fff7;
+    }
+  </style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Orbitron", sans-serif;
+            background: #0b0b0b;
+            color: #d9d9d9;
+        }
+
+        header {
+            padding: 35px 20px;
+            text-align: center;
+            background: url('/views/gambar/predator_bg_texture.jpg') center/cover no-repeat;
+            border-bottom: 2px solid #7a0000;
+        }
+
+        h1 {
+            font-size: 42px;
+            letter-spacing: 3px;
+            color: #ff3636;
+            text-shadow: 0 0 12px #7a0000;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .download-card {
+            display: flex;
+            align-items: center;
+            background: rgba(20, 20, 20, 0.65);
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(4px);
+            transition: 0.2s ease;
+        }
+
+        .download-card:hover {
+            border-color: #a00000;
+            transform: scale(1.02);
+        }
+
+        .download-card img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #3a0000;
+            margin-right: 20px;
+        }
+
+        .download-info h2 {
+            margin: 0;
+            font-size: 26px;
+            color: #ff2e2e;
+            text-shadow: 0 0 8px #7a0000;
+        }
+
+        .download-info p {
+            margin: 5px 0 10px;
+            font-size: 14px;
+        }
+
+        .icon {
+            font-size: 22px;
+            margin-right: 8px;
+            color: #ff2323;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #a00000;
+            border-radius: 6px;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 0 8px #6a0000;
+            transition: 0.2s ease;
+        }
+
+        .download-btn:hover {
+            background: #ff3b3b;
+            box-shadow: 0 0 12px #ff0000;
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            color: #777;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <div class="logo">Imperion</div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/Games">Games</a></li>
+      <li><a href="/top-download">Top Downloads</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/kontak">Contact</a></li>
+    </ul>
+  </nav>
+<header>
+    <h1>TOP DOWNLOADS</h1>
+</header>
+<div class="container">
+
+    <!-- Item 1 -->
+    <div class="download-card">
+        <img src="/gambar/imperion shadow war.jpeg" alt="Imperion Game">
+        <div class="download-info">
+            <h2>Imperion: Shadow War</h2>
+            <p><span class="icon">⟁</span>Versi terbaru, performa stabil, grafis dioptimalkan.</p>
+            <a href="/downloads/imperion-shadow-war.apk" class="download-btn">DOWNLOAD</a>
+        </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="download-card">
+        <img src="/gambar/arena tribe.png" alt="Imperion Arena">
+        <div class="download-info">
+            <h2>Imperion: Arena of Tribes</h2>
+            <p><span class="icon">𖤐</span>Mode multiplayer Yautja-style, lebih brutal.</p>
+            <a href="/downloads/imperion-arena.apk" class="download-btn">DOWNLOAD</a>
+        </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="download-card">
+        <img src="/gambar/tactical assault.jpg" alt="Imperion Tactical">
+        <div class="download-info">
+            <h2>Imperion: Tactical Assault</h2>
+            <p><span class="icon">⫷⫸</span>Mode strategi + stealth, cocok fans Predator.</p>
+            <a href="/downloads/imperion-tactical.apk" class="download-btn">DOWNLOAD</a>
+        </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="download-card">
+        <img src="/gambar/warrior pack.jpg" alt="Imperion DLC">
+        <div class="download-info">
+            <h2>DLC – Warrior Pack</h2>
+            <p><span class="icon">✦</span>Skin tribal, senjata plasma, efek neon darah.</p>
+            <a href="/downloads/imperion-dlc-warrior.zip" class="download-btn">DOWNLOAD</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 – Imperion Game Universe. All Rights Reserved.
+</footer>
+
+</body>
+</html>

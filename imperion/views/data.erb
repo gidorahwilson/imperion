@@ -1,0 +1,27 @@
+<html>
+<head>
+ <title>DATA APLIKASI</title>
+</head>
+<body>
+
+<h2>DATA APLIKASI</h2>
+<table border="1">
+ <tr>
+  <th width="90">name</th>
+  <th width="90">email</th>
+ </tr>
+
+<% @hasil.each { |r| %>
+ <tr>
+  <td><%= r['name'] %></td>
+  <td><%= r['email'] %></td>
+  <td><a href="/hapus/<%= r['name'] %>">Hapus</a></td>
+ </tr>
+<% } %>
+</table>
+<a href="/dashboard">Kembali</a>
+</body>
+</html>
+
+
+

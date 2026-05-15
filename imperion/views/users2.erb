@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>KELOLA USER</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    .container {
+      width: 300px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, button {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      font-size: 15px;
+    }
+
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #388E3C;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h2>KELOLA USER</h2>
+
+    <form action="/tambah" method="POST" onsubmit="return showAlert()">
+
+      <input type="text" name="name" placeholder="Nama" required>
+      <input type="email" name="email" placeholder="Email" required>
+
+      <button type="submit">TAMBAH DATA</button>
+      <a href="/dashboard">Kembali</a>
+      <% if not  @ok  %>
+        <script>
+    function showAlert() {
+      alert("Data berhasil ditambahkan!");
+      return true;
+    }
+  </script>
+      <% else %>
+          <script>
+    function showAlert() {
+      alert("Data gagal ditambahkan!");
+      return true;
+    }
+  </script>
+      <% end %>
+
+    </form>
+  </div>
+</body>

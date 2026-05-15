@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Imperion Login</title>
+
+  <!-- FontAwesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: url('/views/gambar/yautja.jpeg') no-repeat center center fixed,
+                  radial-gradient(circle, #001920, #000000 85%);
+      background-size: 420px;
+      color: #fff;
+    }
+
+    .login-container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(2px);
+    }
+
+    .login-box {
+      background: rgba(0, 20, 30, 0.55);
+      border: 2px solid rgba(0, 255, 190, 0.4);
+      padding: 40px 50px;
+      border-radius: 12px;
+      width: 340px;
+      text-align: center;
+      box-shadow: 0 0 20px #00ffbf50;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #00ffbf30; }
+      to   { box-shadow: 0 0 25px #00ffbf90; }
+    }
+
+    .title {
+      font-size: 22px;
+      margin-bottom: 30px;
+      color: #00ffbf;
+      text-shadow: 0 0 10px #00ffbf;
+    }
+
+    .input-group {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      font-size: 14px;
+      color: #00ffbf;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #00ffbf70;
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.4);
+      color: #00ffbf;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .input-group input:focus {
+      border-color: #00ffd5;
+      box-shadow: 0 0 10px #00ffd560;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(90deg, #00ffbf, #00d6ff);
+      border: none;
+      color: #000;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      filter: brightness(1.2);
+      box-shadow: 0 0 15px #00ffe0;
+    }
+
+    .register-text {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .register-text a {
+      color: #00d6ff;
+      text-shadow: 0 0 5px #00c9ff;
+      text-decoration: none;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="login-container">
+
+    <div class="login-box">
+      <h2 class="title"><i class="fas fa-user-astronaut"></i> IMPERION LOGIN</h2>
+
+      <form action="/login-akun" method="POST">
+        <div class="input-group">
+          <label>Name</label>
+          <input type="text" name="name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" name="email" required>
+        </div>
+
+        <button class="login-btn">LOGIN</button>
+        <% if @error %>
+        <p style="color:red;"><%= @error %></p>
+      <% end %>
+      </form>
+
+      <p class="register-text">
+        Belum punya akun? <a href="/register">Register</a>
+      </p>
+      <p class="register-text">
+        <a href="/">Kembali</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
