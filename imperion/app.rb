@@ -8,10 +8,10 @@ set :protection, false
 
 # Koneksi MySQL
  DB = Mysql2::Client.new(
-   host: "localhost",
-   username: "root",
-   password: "root",
-   database: "sinatra_app"
+   host: "",
+   username: "",
+   password: "",
+   database: ""
  )
 
 get '/' do
